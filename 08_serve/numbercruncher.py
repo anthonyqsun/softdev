@@ -11,7 +11,6 @@ def generate_dict(filename):
     jobDict = {}
     jobDict["Job Class"] = []
     jobDict["Percentage"] = []
-
     with open(filename) as f:
         r =  csv.DictReader(f)
         for row in r:
@@ -22,10 +21,20 @@ def generate_dict(filename):
                 jobDict["Percentage"].append(float(row['Percentage']))
     return jobDict
 
+def get_all_occupations(jobDict):
+    temp = list(jobDict["Job Class"])
+    str = "<ul>"
+    for x in temp:
+        str += "<li>" + x + "</li>"
+    return str + "</ul>"
+
 def give_weighted_job(jobDict):
-    return random.choices(jobDict["Job Class"], jobDict["Percentage"])
+    temp = random.choices(jobDict["Job Class"], jobDict["Percentage"])
+    stringV = str(temp).strip("[").strip("]").strip("'")
+    return stringV
 
 ### TESTING RANGE OF ERROR
+
 if __name__ == "__main__":
     ary = []
     times = 1000
@@ -38,4 +47,3 @@ if __name__ == "__main__":
         cpercent = (ary.count(job)/times)*100
         print(job + ": " + str(cpercent) + "%")
         print("ACTUAL: " + str(apercent) + "% " + "DIFFERENCE: " + str(apercent-cpercent) + "\n")
-

@@ -1,0 +1,16 @@
+10 items or fewer express checkout lane: Daniel Liu, Anthony Sun, Jasmine Yuen
+SoftDev
+2022-10-06
+
+Notes:
+
+need to install flask first through thonny or pip
+
+need app.run() to run flask application
+
+app.debug updates the web page every time code is saved
+
+there is @ in front of @app.route("/") which assigns the function to root directory /
+
+use function from another file by importing <file_name> and calling <file_name>.method()
+
