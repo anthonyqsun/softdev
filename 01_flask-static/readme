@@ -1,0 +1,3 @@
+Opening foo makes browser download the file
+Opening foo.html renders a webpage saying "Is this plaintext, though?"
+Going to root directory still renders "no hablo queso"
