@@ -1,0 +1,20 @@
+10 items or fewer express checkout line: Daniel, Anthony, Jasmine
+Softdev pd02
+k10
+2022-10-13
+time spent: 0.3 hr
+
+
+there are replacement fields in the template file, which are replaced by the arguments in app.py's render_template call
+
+q0: it will throw an error saying render_template is not defined
+q1: http://127.0.0.1/my_foist_template
+q2: 1st argument is template file in /templates; other arguments are field replacements in html file
+
+commands in jinja2 use {%...%} instead of normal fields: {{... }}
+- for
+- endfor
+
+for loops called this way can also include replacement fields
+
+newlines in HTML can be created with <br>
