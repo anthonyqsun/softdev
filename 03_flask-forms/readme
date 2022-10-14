@@ -1,0 +1,11 @@
+user arguments taken through GET requests are params in URL
+usernames don't save in dict - one at a time
+
+after uncommenting lines 42 and 43, the page threw an error. Going to the url http://127.0.0.1:5000/?username=foo solved this issue, as it had a username arg to print.
+
+print(request.args['username']) prints the username we inputted to the terminal
+
+
+QCC:
+what does methods= get, post do?
+How can we save the usernames?
