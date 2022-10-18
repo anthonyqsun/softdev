@@ -1,3 +1,9 @@
+# Whatever: Elizabeth, Maya, Anthony
+# SoftDev
+# K12
+# 2022-10-18
+# time-spent: 1 hr
+
 from flask import Flask, render_template, request #import modules
 
 
@@ -11,7 +17,7 @@ def disp_loginpage():
 def authenticate():
     if request.method =='POST': #forces post request
         name = request.form['name'] #allows you to access name
-    return render_template("response.html", name=request.form['name'], req=str(request))
+    return render_template("response.html", name=request.form['name'], req=str(request.method))
 
 
 if __name__ == "__main__":  # true if this file NOT imported
