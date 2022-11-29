@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Foundation Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.min.js"></script>
+</head>
+
+<body>
+	<form data-abide novalidate>
+		<div class="grid-x grid-margin-x">
+			<div class="cell">
+				<div data-abide-error class="alert callout" style="display: none;">
+					<p><i class="fi-alert"></i> There are some errors in your form.</p>
+				</div>
+			</div>
+			<div class="cell">
+				<label>First Name
+					<input type="text" name="first_name" required pattern="[a-zA-Z]+">
+				</label>
+				<span class="form-error">
+					First name is required and must be a string.
+				</span>
+			</div>
+			<div class="cell">
+				<label>Last Name
+					<input type="text" name="last_name" required pattern="[a-zA-Z]+">
+				</label>
+				<span class="form-error">
+					Last name is required and must be a string.
+				</span>
+			</div>
+			<div class="cell">
+				<label>Email
+					<input type="email" name="email" required>
+				</label>
+				<span class="form-error">
+					Email is required and must be a valid email address.
+				</span>
+			</div>
+			<div class="cell">
+				<label>Password
+					<input type="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+				</label>
+				<span class="form-error">
+					Password is required and must be at least 8 characters long, contain at least one number, one lowercase letter, and one uppercase letter.
+				</span>
+			</div>
+			<div class="cell">
+				<label>Confirm Password
+					<input type="password" name="confirm_password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" data-equalto="password">
+				</label>
+				<span class="form-error">
+					Passwords must match.
+				</span>
+			</div>
+		</div>
+	</form>
+</body>	
+</html>
