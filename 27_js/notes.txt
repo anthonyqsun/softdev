@@ -1,0 +1,16 @@
+Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+SoftDev pd0
+K27 -- Basic functions in JavaScript
+2023-04-03t
+
+DISCO
+-----------------------------------------------------------------
+* You can call JS functions in the console
+* You can call a function before it's completely written (recursion)
+* Use ';' for comments in scheme
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Javascript is much easier syntax-wise than Scheme (it's easier to understand in plain English)
+=================================================================
