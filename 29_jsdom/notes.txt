@@ -1,0 +1,20 @@
+Team BA :: Bachelor of Arts in SoftDev
+SoftDev pd8
+K28 -- Getting more comfortable with the dev console and the DOM
+2023-04-20R
+
+DISCO
+-----------------------------------------------------------------
+* DOM automatically fills in body and head branches for you even if you don't specify these elements in the html
+* .innerHTML: the text inside the elements ex: <body>innerHTML</body>. So if you want to change something, 
+    document.getElementById(id/class/tag).innerHTML="whatever";
+* .setAttribute(name of attribute, val you want to set it to)
+* element.innerHTML references the HTML inside the referenced tag, so the value can both be get'ed and set'ed using that pointer
+* onclick can call specific functions on click
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* js syntax is fairly simple to understand, stuff we've seen before
+    ex: you can add strings and numbers to output a string: "fact of 5: " + fact(5)
+=================================================================

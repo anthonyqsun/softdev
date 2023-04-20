@@ -95,6 +95,10 @@ function gcd(a,b) {
     
 }
 
+console.log("fact 4: "+fact(4))
+console.log("fib 4: "+fib(4))
+console.log("gcd(2,3): "+gcd(2,3))
+
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
